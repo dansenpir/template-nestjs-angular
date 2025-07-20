@@ -26,8 +26,7 @@
     "lint-staged": "^16.1.2",
     "ts-jest": "^29.4.0",
     "tsconfig": "workspace:*",
-    "turbo": "^2.5.5",
-    "typescript": "^5.8.3"
+    "turbo": "^2.5.5"
   },
   "packageManager": "pnpm@8.6.10"
 }
