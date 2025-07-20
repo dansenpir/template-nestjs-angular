@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "scripts": {
+    "preinstall": "git config core.hooksPath hooks",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint --continue --",
+    "lint:fix": "turbo run lint:fix --continue --",
+    "format": "turbo run format --continue --",
+    "format:check": "turbo run format:check --continue --",
+    "test": "turbo run test",
+    "test:unit": "turbo run test:unit",
+    "test:integration": "turbo run test:integration",
+    "test:verbose": "turbo run test:verbose",
+    "test:ci": "turbo run test:ci"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.2",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@turbo/gen": "^2.5.5",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.15",
+    "jest": "^30.0.4",
+    "jestconfig": "workspace:*",
+    "lint-staged": "^16.1.2",
+    "ts-jest": "^29.4.0",
+    "tsconfig": "workspace:*",
+    "turbo": "^2.5.5",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@8.6.10"
+}

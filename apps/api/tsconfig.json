@@ -1,0 +1,9 @@
+{
+  "extends": "tsconfig/api.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": "./src"
+  },
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "./dist"]
+}

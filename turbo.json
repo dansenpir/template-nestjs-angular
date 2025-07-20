@@ -1,0 +1,49 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": ["**/.env.*local"],
+  "tasks": {
+    "build": {
+      "outputs": ["dist/**"]
+    },
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "lint": {
+      "cache": true,
+      "inputs": ["src/**/*.{js,jsx,ts,tsx}", "biome.json"]
+    },
+    "lint:fix": {
+      "cache": false,
+      "inputs": ["src/**/*.{js,jsx,ts,tsx}", "biome.json"]
+    },
+    "format": {
+      "cache": false,
+      "inputs": ["src/**/*.{js,jsx,ts,tsx,json}", "biome.json"]
+    },
+    "format:check": {
+      "cache": true,
+      "inputs": ["src/**/*.{js,jsx,ts,tsx,json}", "biome.json"]
+    },
+    "test": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:unit": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:integration": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:verbose": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:ci": {
+      "cache": false,
+      "persistent": true
+    }
+  }
+}
