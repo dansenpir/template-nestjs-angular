@@ -2,8 +2,10 @@
   "extends": "tsconfig/api.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "baseUrl": "./src"
+    "baseUrl": "./src",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", "vite.config.ts"],
   "exclude": ["node_modules", "./dist"]
 }

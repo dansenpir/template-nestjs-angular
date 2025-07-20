@@ -41,6 +41,9 @@
       "bracketSpacing": true,
       "bracketSameLine": true,
       "quoteStyle": "single"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
     }
   },
   "json": {
