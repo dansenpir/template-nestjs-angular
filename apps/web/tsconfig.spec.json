@@ -4,6 +4,7 @@
     "outDir": "./out-tsc/spec",
     "types": ["jest", "node"]
   },
+  "files": ["tests/setup-jest.ts"],
   "include": ["src/**/*.spec.ts"],
   "exclude": ["node_modules", "dist"]
 }
