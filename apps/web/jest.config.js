@@ -5,7 +5,11 @@ module.exports = Object.assign({}, config, {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: ['<rootDir>/tests/setup-jest.ts'],
 
-  collectCoverageFrom: [...config.collectCoverageFrom, '!**/*.d.ts'],
+  collectCoverageFrom: [
+    ...config.collectCoverageFrom,
+    '!**/*.d.ts',
+    '!src/main.ts',
+  ],
 
   testPathIgnorePatterns: [
     '<rootDir>/node_modules/',
